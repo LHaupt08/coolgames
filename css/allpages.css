@@ -1,0 +1,45 @@
+/*html and body*/
+
+html {
+
+    background-color: #C4D8FF;
+
+}
+
+body {
+
+    background-color: #001339;
+
+}
+
+
+/* Navigation */
+nav.navhead {
+    background-color: white;
+}
+
+nav.navhead img{
+   width: 100%;
+   text-align:center;
+}
+
+.column {
+    float:left;
+    width: 20%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear:both;
+    display:table;
+}
+
+/*Main*/
+
+main {
+    clear:both;
+    color: #67A4FF;
+    height: 90%;
+    text-align:center;
+}
