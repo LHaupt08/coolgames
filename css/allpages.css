@@ -18,22 +18,33 @@ nav.navhead {
     background-color: white;
 }
 
-nav.navhead img{
-   width: 100%;
-   text-align:center;
+nav.navhead ul li img {
+   display: block;
+   width: 80%;
 }
 
-.column {
-    float:left;
-    width: 20%;
-    padding: 5px;
+nav.navhead div.logo, nav.navhead li {
+         display: flex;
+    align-items: center;
+
+   width: 20%;
+   float: left;
+   padding: 5px;
+   max-height: 100px;
 }
 
-.row::after {
-    content: "";
+nav.navhead div.logo img {
+   width: 100px;
+   float: left;
+}
+
+nav.navhead::after {
+    content:"";
     clear:both;
     display:table;
 }
+
+
 
 /*Main*/
 
@@ -42,4 +53,5 @@ main {
     color: #67A4FF;
     height: 90%;
     text-align:center;
+    margin: 10px;
 }
