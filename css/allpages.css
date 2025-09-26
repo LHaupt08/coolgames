@@ -13,24 +13,27 @@ body {
 }
 
 
-/* Navigation */
+/* Navigation (fixing it) */
 nav.navhead {
-    background-color: white;
+    background: linear-gradient(115deg, #508aff 1%, white 20%);
 }
 
-nav.navhead ul li img {
+nav.navhead img {
    display: block;
-   width: 80%;
+   width: 40%;
 }
 
 nav.navhead div.logo, nav.navhead li {
-         display: flex;
+    display: flex;
     align-items: center;
+    vertical-align: -webkit-baseline-middle, middle;
+
 
    width: 20%;
    float: left;
    padding: 5px;
-   max-height: 100px;
+   height: 100px;
+   clear:right;
 }
 
 nav.navhead div.logo img {
@@ -44,7 +47,18 @@ nav.navhead::after {
     display:table;
 }
 
+/* Navigation (fonts and dropdown (if time)) */
 
+nav.navhead div.logo a, nav.navhead li a {
+    font-size:90px;
+    text-align:center;
+    color:#707476;
+    display:inline;
+}
+
+nav.navhead ul li a::before{
+    content: ""; /*find symbols in css*/
+}
 
 /*Main*/
 
