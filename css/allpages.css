@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 /*html and body*/
 
 html {
 
+    font-family: "Orbitron", Arial, Helvetica, sans-serif;
     background-color: #C4D8FF;
 
 }
 
 body {
 
-    background-color: #001339;
+    box-shadow: black 15px 0px 25px,
+    black -15px 0px 25px;
 
 }
 
@@ -63,9 +67,26 @@ nav.navhead ul li a::before{
 /*Main*/
 
 main {
+    background-color: #001339;
     clear:both;
     color: #67A4FF;
-    height: 90%;
     text-align:center;
-    margin: 10px;
+    padding: 10px;
+    clear:both;
+}
+
+/*Fonts and Stuff*/
+
+
+
+h1 {
+    font-size: 36px; /*adjust this later*/
+    padding: 5px;
+
+}
+
+p {
+
+    font-size: 26px;
+
 }

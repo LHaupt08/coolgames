@@ -2,8 +2,34 @@
 
  body {
 
-    margin-left:30px;
-    max-width: 70%;
+    margin: auto;
+    max-width: 90%;
     height: 10%;
 
+ }
+
+ main {
+   max-width: 70%;
+ }
+
+ /*Div Section 1*/
+
+ div.crtbox {
+   float:left;
+   max-width: 20%;
+   display:block;
+
+   color:white;
+   background-color:#274F9F;
+
+   padding: 5px;
+   margin: 5px;
+   font-size: 16px;
+   border: white solid 2px;
+   border-radius: 10px;
+ }
+
+div.crtbox img {
+   width:100%;
+   display:block;
  }
