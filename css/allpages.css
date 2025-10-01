@@ -75,6 +75,11 @@ main {
     clear:both;
 }
 
+main::after {
+    content:"";
+    clear:both;
+}
+
 /*Fonts and Stuff*/
 
 
@@ -82,11 +87,14 @@ main {
 h1 {
     font-size: 36px; /*adjust this later*/
     padding: 5px;
-
 }
 
 p {
-
     font-size: 26px;
+    margin: 10px;
+}
 
+/* Footer */
+footer {
+    clear:both;
 }

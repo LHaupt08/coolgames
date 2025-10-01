@@ -4,17 +4,17 @@
 
     margin: auto;
     max-width: 90%;
-    height: 10%;
 
  }
 
  main {
    max-width: 70%;
+   position: relative;
  }
 
  /*Div Section 1*/
 
- div.crtbox {
+ main figure.crtbox {
    float:left;
    max-width: 20%;
    display:block;
@@ -29,7 +29,7 @@
    border-radius: 10px;
  }
 
-div.crtbox img {
+figure.crtbox img {
    width:100%;
    display:block;
  }
