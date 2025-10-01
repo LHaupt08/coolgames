@@ -13,13 +13,21 @@ body {
 
     box-shadow: black 15px 0px 25px,
     black -15px 0px 25px;
+    max-height: 95%;
+
+    border-radius: 15px;
+    
 
 }
 
 
-/* Navigation (fixing it) */
+/* Navigation */
 nav.navhead {
     background: linear-gradient(115deg, #508aff 1%, white 20%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    box-shadow: black 0px 5px 35px;
 }
 
 nav.navhead img {
@@ -69,10 +77,14 @@ nav.navhead ul li a::before{
 main {
     background-color: #001339;
     clear:both;
-    color: #67A4FF;
     text-align:center;
     padding: 10px;
-    clear:both;
+    display:inline-block;
+
+    height: 100%;
+
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 
 main::after {
@@ -80,21 +92,56 @@ main::after {
     clear:both;
 }
 
+figure {
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
 /*Fonts and Stuff*/
-
-
 
 h1 {
     font-size: 36px; /*adjust this later*/
     padding: 5px;
+
+    color: #67A4FF;
 }
 
 p {
     font-size: 26px;
-    margin: 10px;
+    padding: 10px;
+
+    color:#a2c7ff;
+}
+
+hr {
+
+    border:none;
+    border-top:#508aff 3px solid;
+
+}
+
+a:link {
+    color:#8367ff;
+}
+
+a:hover {
+    color:#a28dff;
+}
+
+a:visited {
+    color:#2f00ff;
 }
 
 /* Footer */
 footer {
     clear:both;
+    max-width: 100%;
+    margin:0px;
+
+    background-color:white;
+    color:#707476;
+    font-size:12px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
