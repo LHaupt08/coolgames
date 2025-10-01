@@ -136,11 +136,12 @@ a:visited {
 footer {
     clear:both;
     max-width: 100%;
+    padding: 5px;
     margin:0px;
 
     background-color:white;
     color:#707476;
-    font-size:12px;
+    font-size:10px;
 
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
