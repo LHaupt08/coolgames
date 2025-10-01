@@ -10,13 +10,14 @@
  main {
    max-width: 70%;
    height:100%;
+   background-color: #001339;
  }
 
- /*Div Section 1*/
+ /*Left Side*/
 
  main figure.crtbox {
    float:left;
-   max-width: 40%;
+   max-width: 35%;
    display:block;
 
    color:white;
@@ -24,14 +25,73 @@
 
    padding: 5px;
    margin: 5px;
-   font-size: 1px;
+   padding: 10px;
+   font-size: 16px;
    border: white solid 2px;
    border-radius: 10px;
  }
 
-main figure.crtbox img {
-   width:90%;
+figure img {
+   width:100%;
    margin: auto;
    margin-bottom: 5px;
    display:block;
+ }
+
+ /*Right Side*/
+
+ section.right {
+    float:right;
+ }
+
+ section.right figure {
+  margin:auto;
+ }
+
+ section.right figcaption {
+   color:#707476;
+   font-size: 16px;
+   text-align:center;
+   margin:5px;
+   padding: 5px;
+
+   border:rgb(177, 177, 177) solid 2px;
+ }
+
+
+
+ /*Right: Wii*/
+
+  section.right figure.wii {
+   max-width: 90%;
+   display:block;
+
+   padding: 5px;
+   font-size: 1px;
+   border:rgb(177, 177, 177) solid 2px;
+   border-radius: 10px;
+ }
+
+figure.wii img {
+  display: block;
+  margin:auto;
+  height: 50%;
+ }
+
+/*Right: SSBU */
+
+  section.right figure.SSBU {
+   max-width: 90%;
+   display:block;
+
+   padding: 5px;
+   font-size: 1px;
+   border:rgb(177, 177, 177) solid 2px;
+   border-radius: 10px;
+ }
+
+ figure.SSBU img {
+  display: block;
+  margin:auto;
+  height: 40%;
  }
