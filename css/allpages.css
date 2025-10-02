@@ -23,7 +23,7 @@ body {
 
 /* Navigation */
 nav.navhead {
-    background: linear-gradient(115deg, #508aff 1%, white 20%);
+    background: linear-gradient(115deg, #508aff 1%, white 15%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
@@ -40,12 +40,22 @@ nav.navhead div.logo, nav.navhead li {
     align-items: center;
     vertical-align: -webkit-baseline-middle, middle;
 
-
-   width: 20%;
    float: left;
    padding: 5px;
    height: 100px;
    clear:right;
+}
+
+nav.navhead li {
+    width: 20%;
+    text-align:center;
+    margin:auto 0px;
+}
+
+nav.navhead div.logo {
+    width: 10%;
+    text-align:center;
+    margin:auto 0px;
 }
 
 nav.navhead div.logo img {
@@ -59,17 +69,22 @@ nav.navhead::after {
     display:table;
 }
 
-/* Navigation (fonts and dropdown (if time)) */
+/* Navigation (dropdown (if time)) */
 
 nav.navhead div.logo a, nav.navhead li a {
     font-size:90px;
     text-align:center;
     color:#707476;
     display:inline;
+    margin: auto 0px;
 }
 
 nav.navhead ul li a::before{
     content: ""; /*find symbols in css*/
+}
+
+nav.navhead img:hover, nav.navhead img:focus {
+    background:radial-gradient(ellipse farthest-side, hsl(220, 100%, 70%), rgba(255, 255, 255, 0));
 }
 
 /*Main*/

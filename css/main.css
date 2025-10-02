@@ -42,6 +42,7 @@ figure img {
 
  section.right {
     float:right;
+    height:753px;
  }
 
  section.right figure {
@@ -75,7 +76,7 @@ figure img {
 figure.wii img {
   display: block;
   margin:auto;
-  height: 50%;
+  max-height: 50%;
  }
 
 /*Right: SSBU */
@@ -93,5 +94,5 @@ figure.wii img {
  figure.SSBU img {
   display: block;
   margin:auto;
-  height: 40%;
+  max-height: 40%;
  }
