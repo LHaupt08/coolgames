@@ -1,16 +1,7 @@
  /* Body */
 
- body {
-
-    margin: auto;
-    max-width: 90%;
-
- }
-
  main {
    max-width: 70%;
-   height:100%;
-   background-color: #001339;
  }
 
  /*Left Side*/
@@ -42,7 +33,7 @@ figure img {
 
  section.right {
     float:right;
-    height:753px;
+    max-height:753px;
  }
 
  section.right figure {

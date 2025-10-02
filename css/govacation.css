@@ -1,0 +1,32 @@
+/*Body*/
+
+html {
+    background:url(../img/kawawiiisland.jpg) center / 100% no-repeat fixed;
+}
+
+/* Logo */
+
+main {
+    width:100%;
+    background-color:#001339e1;
+}
+
+
+p img:first-of-type {
+    min-width:10%;
+    max-width: 25%
+}
+
+/*Main Area*/
+
+h1.quote {
+    font-style:italic;
+}
+
+h1.quote::before {
+    content:open-quote;
+}
+
+h1.quote::after {
+    content:close-quote;
+}

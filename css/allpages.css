@@ -17,6 +17,9 @@ body {
 
     border-radius: 15px;
     
+    margin: auto;
+    max-width: 90%;
+
 
 }
 
@@ -95,10 +98,9 @@ main {
     padding: 10px;
     display:inline-block;
 
-    height: 100%;
-
     line-height: 30px;
     letter-spacing: 2px;
+    background-color: #001339;
 }
 
 main::after {
