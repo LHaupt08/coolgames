@@ -77,3 +77,17 @@ h1.quote::after {
  article.stampdash p {
     clear:both;
  }
+
+ /* Version Differences*/
+
+ ul {
+    color:#a2c7ff;
+ }
+
+ ul li{
+    list-style-type:disc;
+ }
+
+ ul ul li{
+    list-style-type:square;
+ }
