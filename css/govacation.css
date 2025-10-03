@@ -81,13 +81,21 @@ h1.quote::after {
  /* Version Differences*/
 
  ul {
-    color:#a2c7ff;
+    text-align:left;
+    list-style-position: inside;
  }
 
  ul li{
+    color:#a2c7ff;
     list-style-type:disc;
  }
 
  ul ul li{
+    color:#3787ff;
     list-style-type:square;
+ }
+
+ span.difcolor {
+    color:#3787ff;
+    display:inline;
  }
