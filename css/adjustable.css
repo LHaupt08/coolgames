@@ -1,25 +1,63 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     
     /*Removing logo's divisor*/
     div.slash {
         display:none;
+        font-size:0px;
     }
 
-}
 
-@media screen and (min-width: 481px) {
+    /*Nav Stuff :]*/
 
-    /*Removing logo's divisor*/
-    div.slash {
+    nav.navhead {
+        max-height:50px
+    }
+
+    nav.navhead li, nav.navhead li a, nav.navhead li a img {
         display:none;
+        padding:0px;
     }
 
+    nav.navhead div.logo a {
+        margin: 0px;
+    }
+
+    nav.navhead div.logo, nav.navhead div.logo a, nav.navhead div.logo img {
+        float:none;
+    }
+
+    nav.navhead div.logo {
+        display:block;
+        margin:0px auto ;
+        padding:0px;
+        height: 50px;
+    }
+
+    nav.navhead div.logo {
+       max-height: 50px;
+    }
+
+    /*Nav Icon (yes I did grab it from the tutorial*/
+
+    a.navicon {
+        display:block;
+        float:left;
+
+        display: flex;
+        align-items: center;
+        height: 50px;
+        clear:right;
+    }
 }
 
 @media screen and (min-width: 769px) {
-    
-    div.slash {
-        display:inline;
+
+    /*Removing logo's divisor*/
+
+    /*Nav Icon (yes I did grab it from the tutorial*/
+
+    a.navicon {
+        display:none;
     }
 
 }
