@@ -37,15 +37,14 @@ nav.navhead div.slash {
     display:inline;
 }
 
-nav.navhead img {
-   display: block;
-   width: 40%;
+nav.navhead ul li img {
+    display: block;
+    width: 50%;
 }
 
-nav.navhead div.logo, nav.navhead li {
+nav.navhead div.logo, nav.navhead li{
     display: flex;
     align-items: center;
-    vertical-align: -webkit-baseline-middle, middle;
 
    float: left;
    padding: 5px;
@@ -79,11 +78,12 @@ nav.navhead::after {
 /* Navigation (dropdown (if time)) */
 
 nav.navhead div.logo a, nav.navhead li a {
+    display:inline;
+    margin: auto 0px;
+
     font-size:90px;
     text-align:center;
     color:#707476;
-    display:inline;
-    margin: auto 0px;
 }
 
 nav.navhead ul li a::before{
@@ -119,20 +119,13 @@ figcaption {
 
 section {
     display:inline-block;
-
-    overflow-y:auto;
-    display: block;
     background-color: white;
-
-    border-top:rgb(71,71,71) solid 2px;
-    border-bottom:rgb(71,71,71) solid 2px;
-    width: 25%;
 }
 
 /*Fonts and Stuff*/
 
 h1 {
-    font-size: 36px; /*adjust this later*/
+    font-size: 36px;
     padding: 5px;
 
     color: #67A4FF;
@@ -163,7 +156,7 @@ a:link {
     color:#8367ff;
 }
 
-a:hover {
+a:hover, a:focus {
     color:#a28dff;
 }
 

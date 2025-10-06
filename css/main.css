@@ -16,7 +16,6 @@
 
    padding: 5px;
    margin: 5px;
-   padding: 10px;
    font-size: 16px;
    border: white solid 2px;
    border-radius: 10px;
@@ -34,10 +33,17 @@ figure img {
  section.right {
     float:right;
     max-height:753px;
+
+    overflow-y:auto;
+    display: block;
+    border-top:rgb(71,71,71) solid 2px;
+    border-bottom:rgb(71,71,71) solid 2px;
+    max-width: 25%;
  }
 
  section.right figure {
   margin:auto;
+  max-width: 90%;
  }
 
  section.right figcaption {
@@ -55,11 +61,9 @@ figure img {
  /*Right: Wii*/
 
   section.right figure.wii {
-   max-width: 90%;
    display:block;
 
    padding: 5px;
-   font-size: 1px;
    border:rgb(177, 177, 177) solid 2px;
    border-radius: 10px;
  }
@@ -73,11 +77,9 @@ figure.wii img {
 /*Right: SSBU */
 
   section.right figure.SSBU {
-   max-width: 90%;
    display:block;
 
    padding: 5px;
-   font-size: 1px;
    border:rgb(177, 177, 177) solid 2px;
    border-radius: 10px;
  }

@@ -1,7 +1,7 @@
 /*Body*/
 
 html {
-    background:url(../img/kawawiiisland.jpg) center / 100% no-repeat fixed;
+    background:url(../img/kawawiiisland.jpg) center / 100% 100% no-repeat fixed;
 }
 
 /* Logo */
@@ -15,7 +15,7 @@ main {
 p img:first-of-type {
     min-width:10%;
     max-width: 25%;
-    margin: 0px 10px;
+    margin: 20px;
 
     box-shadow: #F7F7F7 20px 20px 15px,
     #F7F7F7 -20px -20px 15px,
