@@ -11,68 +11,62 @@ html {
 
 body {
 
-    display:flex;
-    display:-webkit-flex;
-
-    flex-flow:row wrap;
-    -webkit-flex-flow:row wrap;
-
     box-shadow: black 15px 0px 25px,
     black -15px 0px 25px;
+    max-height: 95%;
 
     border-radius: 15px;
     
     margin: auto;
     max-width: 90%;
 
+
 }
 
 
 /* Navigation */
-
 nav.navhead {
-    flex: 1 1 500px;
-    -webkit-flex: 1 1 100px;
-    display:flex;
-    display:-webkit-flex;
-
     background: linear-gradient(115deg, #508aff 1%, white 15%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
     box-shadow: black 0px 5px 35px;
-
-    flex-flow:row nowrap;
-    -webkit-flex-flow:row nowrap;
 }
 
-nav.navhead div.logo a, nav.navhead li a {
+nav.navhead div.slash {
     display:inline;
-    margin:auto 0px;
-    font-size:90px;
-    text-align:center;
-    color:#707476;
-}
-
-nav.navhead div.logo div.slash {
-    display:inline;
-}
-
-nav.navhead div.logo, nav.navhead li {
-    display:flex;
-    display:-webkit-flex;
-    
-    float: left;
-   padding: 5px;
-   height: 100px;
-
-   width: 16.6%;
-   margin:auto 0px;
 }
 
 nav.navhead ul li img {
     display: block;
     width: 50%;
+}
+
+nav.navhead ul li img.creatur {
+    display: block;
+    width: 100%;
+}
+
+nav.navhead div.logo, nav.navhead li{
+    display: flex;
+    align-items: center;
+
+   float: left;
+   padding: 5px;
+   height: 100px;
+   clear:right;
+}
+
+nav.navhead li {
+    width: 16.6%;
+    text-align:center;
+    margin:auto 0px;
+}
+
+nav.navhead div.logo {
+    width: 16.6%;
+    text-align:center;
+    margin:auto 0px;
 }
 
 nav.navhead div.logo img {
@@ -87,7 +81,22 @@ nav.navhead::after {
 
 /* Navigation (dropdown (if time)) */
 
+nav.navhead div.logo a, nav.navhead li a {
+    display:inline;
+    margin: auto 0px;
 
+    font-size:90px;
+    text-align:center;
+    color:#707476;
+}
+
+nav.navhead ul li a::before{
+    content: ""; /*find symbols in css*/
+}
+
+nav.navhead img:hover, nav.navhead img:focus {
+    background:radial-gradient(ellipse farthest-side, hsl(220, 100%, 70%), rgba(255, 255, 255, 0));
+}
 
 /*Main*/
 
