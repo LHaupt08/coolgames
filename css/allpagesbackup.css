@@ -71,6 +71,7 @@ nav.navhead div.logo {
 
 nav.navhead div.logo img {
    max-width: 100px;
+   float:left;
 }
 
 nav.navhead::after {
@@ -88,10 +89,6 @@ nav.navhead div.logo a, nav.navhead li a {
     font-size:90px;
     text-align:center;
     color:#707476;
-}
-
-nav.navhead ul li a::before{
-    content: ""; /*find symbols in css*/
 }
 
 nav.navhead img:hover, nav.navhead img:focus {

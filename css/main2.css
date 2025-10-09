@@ -1,0 +1,87 @@
+ /* Body */
+
+ main {
+   max-width: 70%;
+   flex: 1 2 873px;
+ }
+
+ /*Left Side*/
+
+ main figure.crtbox {
+   float:left;
+   max-width: 35%;
+   display:block;
+
+   color:white;
+   background-color:#274F9F;
+
+   padding: 5px;
+   margin: 5px;
+   font-size: 16px;
+   border: white solid 2px;
+   border-radius: 10px;
+ }
+
+figure img {
+   width:100%;
+   margin: auto;
+   margin-bottom: 5px;
+   display:block;
+ }
+
+ /*Right Side*/
+
+ section.right {
+    display:block;
+    flex: 1 1 312px;
+    margin-left: 20px
+ }
+
+ section.right figure {
+  margin:auto;
+  max-width: 90%;
+ }
+
+ section.right figcaption {
+   color:#707476;
+   font-size: 16px;
+   text-align:center;
+   margin:5px;
+   padding: 5px;
+
+   border:rgb(177, 177, 177) solid 2px;
+ }
+
+
+
+ /*Right: Wii*/
+
+  section.right figure.wii {
+   display:block;
+
+   padding: 5px;
+   border:rgb(177, 177, 177) solid 2px;
+   border-radius: 10px;
+ }
+
+figure.wii img {
+  display: block;
+  margin:auto;
+  max-height: 50%;
+ }
+
+/*Right: SSBU */
+
+  section.right figure.SSBU {
+   display:block;
+
+   padding: 5px;
+   border:rgb(177, 177, 177) solid 2px;
+   border-radius: 10px;
+ }
+
+ figure.SSBU img {
+  display: block;
+  margin:auto;
+  max-height: 40%;
+ }

@@ -1,16 +1,10 @@
 @media only screen and (max-width: 768px) {
-    
-    /*Removing logo's divisor*/
-    div.slash {
-        display:none;
-        font-size:0px;
-    }
-
 
     /*Nav Stuff :]*/
 
     nav.navhead ul {
         display:none;
+        flex-flow:column nowrap;
     }
 
     nav.navhead div.logo a {

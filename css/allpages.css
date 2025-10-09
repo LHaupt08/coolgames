@@ -30,9 +30,19 @@ body {
 
 /* Navigation */
 
+header {
+    display:block;
+    flex: 1 1 500px;
+    -webkit-flex: 1 1 500px;
+
+    order:1;
+}
+
+    /*navhead*/
+
 nav.navhead {
     flex: 1 1 500px;
-    -webkit-flex: 1 1 100px;
+    -webkit-flex: 1 1 500px;
     display:flex;
     display:-webkit-flex;
 
@@ -44,39 +54,8 @@ nav.navhead {
 
     flex-flow:row nowrap;
     -webkit-flex-flow:row nowrap;
-}
 
-nav.navhead div.logo a, nav.navhead li a {
-    display:inline;
-    margin:auto 0px;
-    font-size:90px;
-    text-align:center;
-    color:#707476;
-}
-
-nav.navhead div.logo div.slash {
-    display:inline;
-}
-
-nav.navhead div.logo, nav.navhead li {
-    display:flex;
-    display:-webkit-flex;
     
-    float: left;
-   padding: 5px;
-   height: 100px;
-
-   width: 16.6%;
-   margin:auto 0px;
-}
-
-nav.navhead ul li img {
-    display: block;
-    width: 50%;
-}
-
-nav.navhead div.logo img {
-   max-width: 100px;
 }
 
 nav.navhead::after {
@@ -85,15 +64,94 @@ nav.navhead::after {
     display:table;
 }
 
+    /*Logo and UL*/
+
+nav.navhead ul {
+    display:flex;
+    display:-webkit-flex;
+
+    flex-flow: 1  1032px;
+
+    flex-flow:row nowrap;
+    -webkit-flex-flow:row nowrap;
+}
+
+nav.navhead div.logo, nav.navhead li {
+    display:flex;
+    display:-webkit-flex;
+
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    
+    justify-content:center;
+
+   margin:auto 0px;
+}
+
+nav.navhead li {
+    flex: 1 1 200px;
+    -webkit-flex: 1 1 200px;
+}
+
+nav.navhead div.logo {
+    flex: 1 1 216px;
+    -webkit-flex: 1 1 216px;
+    border-right:#707476 solid 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+    /*Nav Hyperlinks*/
+
+nav.navhead ul li a {
+    display:flex;
+    justify-content:center;
+    margin:0px auto;
+}
+    /*Nav Images and So On*/
+
+nav.navhead ul li img {
+    display: block;
+    width: 50%;
+}
+
+nav.navhead div.logo img {
+   max-width: 100px;
+   float:left;
+
+   flex: 1 1 190px;
+   -webkit-flex: 1 1 190px;
+}
+
+nav.navhead img.creatur {
+    width:100%;
+}
+
 /* Navigation (dropdown (if time)) */
 
+nav.navhead img:hover, nav.navhead img:focus {
+    background:radial-gradient(ellipse farthest-side, hsl(220, 100%, 70%), rgba(255, 255, 255, 0));
+}
 
+/*Page Content Setup..*/
+
+div.page {
+    display:flex;
+    display:-webkit-flex;
+
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    order:2;
+    flex: 1 1 1248px;
+    -webkit-flex: 1 1 1248px;
+}
 
 /*Main*/
 
 main {
     clear:both;
     text-align:center;
+    
     padding: 10px;
     display:inline-block;
 
@@ -171,6 +229,7 @@ footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-align: center;
+    order:3;
 }
 
 footer p {
