@@ -4,87 +4,94 @@
 
     nav.navhead ul {
         display:none;
-        flex-flow: column nowrap;
-        -webkit-flex-flow: column nowrap;
+        flex-flow: column wrap;
+        -webkit-flex-flow: column wrap;
+        flex: 1 1 500px;
+        align-items:left;
     }
 
     nav.navhead {
         flex-flow: column nowrap;
         -webkit-flex-flow: column nowrap;
+
+        flex: 1 1 50px;
+        -webkit-flex: 1 1 50px;
+    }
+
+    nav.navhead div.row {
+        flex-flow: row nowrap;
     }
 
     nav.navhead div.logo a {
         margin: 0px;
     }
 
-    nav.navhead div.logo, nav.navhead div.logo a, nav.navhead div.logo img {
+    nav.navhead div.logo, nav.navhead div.logo a, nav.navhead div.logo img, nav.navhead ul li{
         float:none;
     }
 
     nav.navhead div.logo {
-        display:block;
-        margin:0px auto ;
+        display:flex;
+        justify-content: flex-start;
         padding:0px;
-        height: 50px;
+        border:none;
+
+        flex: 1 1 150px;
+        -webkit-flex: 1 1 150px;
     }
 
     /*Nav Icon (yes I did grab it from the tutorial*/
-
-    nav.navhead ul > li {
-        margin-top: 30px;
-    }
-
-    nav.navhead ul li {
-        float:none;
-    }
-
     nav.navhead ul li a {
         float:none;
         clear:both;
         width:100%;
+
+        justify-content:flex-start;
    }
 
    nav.navhead ul li a img{
     display:block;
     max-width:100px;
-    margin: auto 0px;
    }
 
     a.navicon {
-        display:block;
-        float:left;
+        flex: 1 1 50px;
+        -webkit-flex: 1 1 50px;
 
         display: flex;
-        align-items: center;
+        display: -webkit-flex;
+        justify-content:flex-start;
+        align-items:center;
+    }
+
+    a.navicon img {
+        width: 50px;
         height: 50px;
     }
 
     nav.navhead ul li {
+        flex-flow:column nowrap;
+        -webkit-flex-flow: column nowrap;
+
+        flex: 1 1 auto;
+        -webkit-flex: 1 1 auto;
         border-top: #707476 solid 3px;
-        align-items: right;
-        width:100%;
-        max-height:30px;
     }
 
-    nav.navhead ul li a img.wiiu {
-        margin-top:10px;
+    nav.navhead li:nth-of-type(5) {
+        background-color:#9da3a7;
     }
 
-    nav.navhead ul li a img.ninten {
-        margin-top:14px;
-    }
+    nav.navhead li:nth-of-type(5) a {
+        flex:none;
+        background:none;
 
-    nav.navhead ul li a img.ds {
-        margin-top:15px;
-    }
-
-    nav.navhead ul li:nth-of-type(5) {
-        margin-bottom: 70px;
+        margin:0px;
     }
 
 
 
-    a.navicon:hover~ul, nav.navhead ul:hover /*Fix this Later*/ {
+   div.row:has(a:hover) ~ ul, nav.navhead ul:hover /*Fix this Later*/ {
         display:flex;
     }
 
@@ -93,6 +100,12 @@
 
 
     /*Element Readjusting (Main)*/
+
+    div.page {
+        flex-flow: column nowrap;
+        -webkit-flex-flow: column nowrap;
+    }
+
 
     main {
         margin:auto;

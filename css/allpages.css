@@ -56,6 +56,14 @@ nav.navhead {
     
 }
 
+nav.navhead div.row {
+    flex: inherit;
+    display:inherit;
+
+    flex-flow:inherit;
+    -webkit-flex-flow: inherit;
+}
+
 nav.navhead::after {
     content:"";
     clear:both;
