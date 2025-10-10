@@ -50,8 +50,6 @@ nav.navhead {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
-    box-shadow: black 0px 5px 35px;
-
     flex-flow:row nowrap;
     -webkit-flex-flow:row nowrap;
 
@@ -70,7 +68,8 @@ nav.navhead ul {
     display:flex;
     display:-webkit-flex;
 
-    flex-flow: 1  1032px;
+    flex-flow: 1 1 1032px;
+    -webkit-flex-flow: 1 1 1032px;
 
     flex-flow:row nowrap;
     -webkit-flex-flow:row nowrap;
@@ -108,6 +107,11 @@ nav.navhead ul li a {
     justify-content:center;
     margin:0px auto;
 }
+
+nav.navhead li:nth-of-type(5) a {
+    flex: 1 1 300px;
+    background:linear-gradient(90deg, white, rgb(177, 177, 177) );
+}
     /*Nav Images and So On*/
 
 nav.navhead ul li img {
@@ -123,27 +127,15 @@ nav.navhead div.logo img {
    -webkit-flex: 1 1 190px;
 }
 
-nav.navhead img.creatur {
-    width:100%;
+nav.navhead li img.creatur {
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /* Navigation (dropdown (if time)) */
 
 nav.navhead img:hover, nav.navhead img:focus {
     background:radial-gradient(ellipse farthest-side, hsl(220, 100%, 70%), rgba(255, 255, 255, 0));
-}
-
-/*Page Content Setup..*/
-
-div.page {
-    display:flex;
-    display:-webkit-flex;
-
-    flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    order:2;
-    flex: 1 1 1248px;
-    -webkit-flex: 1 1 1248px;
 }
 
 /*Main*/
@@ -219,8 +211,10 @@ a:visited {
 
 /* Footer */
 footer {
+    border-top: rgb(177, 177, 177) solid 3px;
     clear:both;
-    max-width: 100%;
+    display: block;
+    width: 100%;
     padding: 5px;
     margin:0px;
 

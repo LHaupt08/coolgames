@@ -1,8 +1,20 @@
+ /*Page Content Setup..*/
+
+div.page {
+    display:flex;
+    display:-webkit-flex;
+
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    order:2;
+    flex: 1 1 1248px;
+    -webkit-flex: 1 1 1248px;
+}
+ 
  /* Body */
 
  main {
-   max-width: 70%;
-   flex: 1 2 873px;
+   flex: 1 2 850px;
  }
 
  /*Left Side*/
@@ -34,7 +46,7 @@ figure img {
  section.right {
     display:block;
     flex: 1 1 312px;
-    margin-left: 20px
+    border-top:rgba(123, 123, 123, 1) solid 3px;
  }
 
  section.right figure {
