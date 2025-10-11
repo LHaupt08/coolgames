@@ -11,57 +11,67 @@ html {
 
 body {
 
-    display:flex;
-    display:-webkit-flex;
-
-    flex-flow:row wrap;
-    -webkit-flex-flow:row wrap;
-
     box-shadow: black 15px 0px 25px,
     black -15px 0px 25px;
+    max-height: 95%;
 
     border-radius: 15px;
     
     margin: auto;
     max-width: 90%;
 
+
 }
 
 
 /* Navigation */
-
-header {
-    display:block;
-    flex: 1 1 500px;
-    -webkit-flex: 1 1 500px;
-
-    order:1;
-}
-
-    /*navhead*/
-
 nav.navhead {
-    flex: 1 1 500px;
-    -webkit-flex: 1 1 500px;
-    display:flex;
-    display:-webkit-flex;
-
     background: linear-gradient(115deg, #508aff 1%, white 15%);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
-    flex-flow:row nowrap;
-    -webkit-flex-flow:row nowrap;
-
-    
+    box-shadow: black 0px 5px 35px;
 }
 
-nav.navhead div.row {
-    flex: inherit;
-    display:inherit;
+nav.navhead div.slash {
+    display:inline;
+}
 
-    flex-flow:inherit;
-    -webkit-flex-flow: inherit;
+nav.navhead ul li img {
+    display: block;
+    width: 50%;
+}
+
+nav.navhead ul li img.creatur {
+    display: block;
+    width: 100%;
+}
+
+nav.navhead div.logo, nav.navhead li{
+    display: flex;
+    align-items: center;
+
+   float: left;
+   padding: 5px;
+   height: 100px;
+   clear:right;
+}
+
+nav.navhead li {
+    width: 16.6%;
+    text-align:center;
+    margin:auto 0px;
+}
+
+nav.navhead div.logo {
+    width: 16.6%;
+    text-align:center;
+    margin:auto 0px;
+}
+
+nav.navhead div.logo img {
+   max-width: 100px;
+   float:left;
 }
 
 nav.navhead::after {
@@ -70,78 +80,16 @@ nav.navhead::after {
     display:table;
 }
 
-    /*Logo and UL*/
-
-nav.navhead ul {
-    display:flex;
-    display:-webkit-flex;
-
-    flex-flow: 1 1 1032px;
-    -webkit-flex-flow: 1 1 1032px;
-
-    flex-flow:row nowrap;
-    -webkit-flex-flow:row nowrap;
-}
-
-nav.navhead div.logo, nav.navhead li {
-    display:flex;
-    display:-webkit-flex;
-
-    flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    
-    justify-content:center;
-
-   margin:auto 0px;
-}
-
-nav.navhead li {
-    flex: 1 1 200px;
-    -webkit-flex: 1 1 200px;
-}
-
-nav.navhead div.logo {
-    flex: 1 1 216px;
-    -webkit-flex: 1 1 216px;
-    border-right:#707476 solid 3px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-    /*Nav Hyperlinks*/
-
-nav.navhead ul li a {
-    display:flex;
-    justify-content:center;
-    margin:0px auto;
-}
-
-nav.navhead li:nth-of-type(5) a {
-    flex: 1 1 300px;
-    background:linear-gradient(90deg, white, rgb(177, 177, 177) );
-    border-top-right-radius: 15px;
-}
-    /*Nav Images and So On*/
-
-nav.navhead ul li img {
-    display: block;
-    width: 50%;
-}
-
-nav.navhead div.logo img {
-   max-width: 100px;
-   float:left;
-
-   flex: 1 1 190px;
-   -webkit-flex: 1 1 190px;
-}
-
-nav.navhead li img.creatur {
-    image-rendering: crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-}
-
 /* Navigation (dropdown (if time)) */
+
+nav.navhead div.logo a, nav.navhead li a {
+    display:inline;
+    margin: auto 0px;
+
+    font-size:90px;
+    text-align:center;
+    color:#707476;
+}
 
 nav.navhead img:hover, nav.navhead img:focus {
     background:radial-gradient(ellipse farthest-side, hsl(220, 100%, 70%), rgba(255, 255, 255, 0));
@@ -152,7 +100,6 @@ nav.navhead img:hover, nav.navhead img:focus {
 main {
     clear:both;
     text-align:center;
-    
     padding: 10px;
     display:inline-block;
 
@@ -220,10 +167,8 @@ a:visited {
 
 /* Footer */
 footer {
-    border-top: rgb(177, 177, 177) solid 3px;
     clear:both;
-    display: block;
-    width: 100%;
+    max-width: 100%;
     padding: 5px;
     margin:0px;
 
@@ -232,7 +177,6 @@ footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-align: center;
-    order:3;
 }
 
 footer p {
