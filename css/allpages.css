@@ -119,6 +119,7 @@ nav.navhead ul li a {
 nav.navhead li:nth-of-type(5) a {
     flex: 1 1 300px;
     background:linear-gradient(90deg, white, rgb(177, 177, 177) );
+    border-top-right-radius: 15px;
 }
     /*Nav Images and So On*/
 
